@@ -136,7 +136,7 @@ jobs:
         # 以下插件为 chongshengB 版本专属插件，hanwckf 版不可用!!!
         # 如需使用这些插件，请修改24行 BUILD_VERSION 为 chongshengB
         #########################################################################################
-        if [ $BUILD_VERSION == "chongshengB" ]; then
+        if [ $BUILD_VERSION == "linCC-web" ]; then
           echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> configs/templates/$TNAME.config      #simple-obfs混淆插件
           echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> configs/templates/$TNAME.config      #adbyby plus+
           echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> configs/templates/$TNAME.config     #阿里DDNS
