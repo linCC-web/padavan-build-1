@@ -42,7 +42,8 @@ jobs:
       run: |
         git clone --depth=1 https://github.com/$BUILD_VERSION/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
-        sh dl_toolchain.sh
+        ./clean_toolchain
+        ./build_toolchain
         mkdir -p /opt/images/
         echo "DATE=$(date "+%Y-%m-%d")" >> $GITHUB_ENV
 
